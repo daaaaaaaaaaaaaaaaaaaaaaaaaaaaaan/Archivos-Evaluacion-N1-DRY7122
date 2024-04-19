@@ -1,0 +1,59 @@
+{
+  "router": {
+    "hostname": "",
+    "interfaces": [
+      {
+        "name": "",
+        "ip_address": "",
+        "subnet_mask": "",
+        "description": "",
+        "mtu":"",
+        "protocol":"",
+        "status":"",
+        "mac_address":"",
+        "IPv6_address":""
+      }
+      
+    ],
+    "routing": {
+      "static_routes": [
+        {
+          "destination_network": "",
+          "subnet_mask": "",
+          "next_hop": "",
+          "metric":""
+          
+        }
+        
+      ],
+      "dynamic_routing_protocols": [
+        {
+          "protocol": "",
+          "process_id": "",
+          "networks": [
+            {
+              "network": "",
+              "subnet_mask": ""
+              
+            }
+            
+          ]
+          
+        }
+        
+      ]
+    },
+    "security": {
+        "passwords": {
+          "enable_secret": "encrypted_password",
+          "user_accounts": [
+            {
+              "username": "admin",
+              "password": "encrypted_password",
+              "privilege_level": 15
+            }
+          ]
+        }
+    }
+}
+}

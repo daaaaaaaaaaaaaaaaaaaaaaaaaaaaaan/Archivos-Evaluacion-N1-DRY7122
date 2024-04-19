@@ -1,0 +1,16 @@
+def verificar_acl(numero):
+#Definir si es una ACL estandar, extendida o si no corresponde a una ACL
+    if numero >= 1 and numero <= 99:
+        return "ACL estandar"
+    elif numero >= 100 and numero<= 199:
+        return "ACL extendida"
+    else:
+            return "El numero no corresponde a una lista de acceso"
+#Solicitar introducr un numero de ACL IPv4
+try:
+    numero_acl = int(input("Introduce un numero de ACL IPv4: "))
+    tipo_acl = verificar_acl(numero_acl)
+    print("La ACL con numero {} es {}".format(numero_acl, tipo_acl))
+#Permitir que solo se ingresen numeros
+except ValueError:
+    print("Por favor, ingrese un número válido")
